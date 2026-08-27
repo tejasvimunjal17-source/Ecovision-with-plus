@@ -1,0 +1,13 @@
+streamlit>=1.42.0  # PHASE 3A: st.login()/st.dialog() require >=1.42 for the "Continue with Google" auth-choice popup (see app.py)
+python-dotenv>=1.0.1
+psycopg2-binary>=2.9.9  # PHASE 2B: direct Postgres connection to Supabase (see database/db.py, supabase/README.md)
+requests>=2.32.3
+pandas>=2.2.2
+numpy>=1.26.4
+plotly>=5.24.0
+Pillow>=10.4.0
+openpyxl>=3.1.5
+fpdf2>=2.7.9
+streamlit-lottie>=0.0.5
+streamlit-option-menu>=0.3.13
+opencv-python-headless>=4.10.0.84  # video frame extraction for Report Waste video classification
