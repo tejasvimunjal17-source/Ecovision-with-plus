@@ -1,0 +1,159 @@
+/* ==============================================================
+   EcoVision AI — Premium Glassmorphism Theme
+   Sustainability palette: Emerald / Forest Green / Sky Blue / Slate
+   ============================================================== */
+
+:root {
+    --emerald: #10b981;
+    --forest: #065f46;
+    --sky: #38bdf8;
+    --slate: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.14);
+}
+
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #0b2b26 45%, #0f172a 100%);
+    background-attachment: fixed;
+}
+
+/* Glass cards */
+.eco-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    padding: 1.4rem 1.6rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin-bottom: 1rem;
+}
+.eco-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.18);
+}
+
+/* Hero */
+.eco-hero {
+    text-align: center;
+    padding: 3.5rem 1rem 2.5rem 1rem;
+    border-radius: 24px;
+    background: radial-gradient(circle at 20% 20%, rgba(16,185,129,0.20), transparent 45%),
+                radial-gradient(circle at 80% 30%, rgba(56,189,248,0.18), transparent 45%),
+                rgba(255,255,255,0.03);
+    border: 1px solid var(--glass-border);
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in;
+}
+.eco-hero h1 {
+    font-size: 2.6rem;
+    background: linear-gradient(90deg, #34d399, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+}
+.eco-hero p {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+.eco-float { animation: float 3.5s ease-in-out infinite; display: inline-block; }
+
+/* KPI stat */
+.eco-stat {
+    text-align: center;
+    padding: 1.2rem;
+}
+.eco-stat .num {
+    font-size: 2.1rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #34d399, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.eco-stat .label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+/* Badges / pills */
+.eco-pill {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 999px;
+    background: rgba(16,185,129,0.15);
+    border: 1px solid rgba(16,185,129,0.4);
+    color: #34d399;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin: 3px;
+}
+
+/* Section title */
+.eco-section-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin: 1.6rem 0 0.8rem 0;
+    color: #e2e8f0;
+}
+.eco-section-sub {
+    color: #94a3b8;
+    margin-bottom: 1.2rem;
+}
+
+/* Footer */
+.eco-footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+    padding: 2rem 0 1rem 0;
+    border-top: 1px solid var(--glass-border);
+    margin-top: 2rem;
+}
+
+/* Buttons */
+div.stButton > button {
+    border-radius: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(16,185,129,0.4);
+    transition: all 0.2s ease;
+}
+div.stButton > button:hover {
+    border-color: #34d399;
+    box-shadow: 0 0 16px rgba(16,185,129,0.35);
+    transform: translateY(-2px);
+}
+
+/* Chat bubbles */
+.chat-bubble-user {
+    background: linear-gradient(135deg, #10b981, #0891b2);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 16px 16px 4px 16px;
+    margin: 6px 0;
+    max-width: 80%;
+    margin-left: auto;
+}
+.chat-bubble-ai {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid var(--glass-border);
+    color: #e2e8f0;
+    padding: 10px 16px;
+    border-radius: 16px 16px 16px 4px;
+    margin: 6px 0;
+    max-width: 80%;
+}
